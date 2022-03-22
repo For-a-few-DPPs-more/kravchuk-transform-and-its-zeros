@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import rpy2.robjects as robjects
 

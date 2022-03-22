@@ -2,7 +2,6 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import numpy.random as npr
-import scipy.special as sps
 from matplotlib.pyplot import figure
 
 sapin = (0.0353, 0.3216, 0.1569)

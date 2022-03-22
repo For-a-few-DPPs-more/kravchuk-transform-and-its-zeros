@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import numpy.random as npr
 
 sapin = (0.0353, 0.3216, 0.1569)
 

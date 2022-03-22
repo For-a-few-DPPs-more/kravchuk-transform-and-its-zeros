@@ -1,25 +1,13 @@
 import os
 
 import numpy as np
-import numpy.random as npr
-from scipy.io import loadmat, savemat
+from scipy.io import savemat
 
-from kravtrans0.chirp_signals import the_chirp, the_noisy_chirp, the_white_noise
-from kravtrans0.kravchuk_display import (
-    planar_display,
-    signal_display,
-    spherical_display,
-)
+from kravtrans0.chirp_signals import the_white_noise
 from kravtrans0.kravchuk_transform import the_transform, the_zeros
 from kravtrans0.spatialstats import spatialStatsFromR
-from kravtrans0.spherical_statistics import (
-    empirical_F,
-    empirical_K,
-    the_distance,
-    the_F_statistics,
-    the_K_statistics,
-)
-from kravtrans0.stft_transform import stft_display, the_stft_transform, the_stft_zeros
+from kravtrans0.spherical_statistics import the_F_statistics, the_K_statistics
+from kravtrans0.stft_transform import the_stft_transform, the_stft_zeros
 
 
 def noise_samples(N, alpha=0.05, m=199, time_t=[], folder="samples"):

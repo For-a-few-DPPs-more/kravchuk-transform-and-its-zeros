@@ -1,6 +1,5 @@
-import matplotlib.pyplot as plt
 import numpy as np
-from scipy.io import loadmat, savemat
+from scipy.io import loadmat
 
 from kravtrans0.spherical_statistics import empirical_F, empirical_K
 
