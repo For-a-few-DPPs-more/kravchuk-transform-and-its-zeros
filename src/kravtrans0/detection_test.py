@@ -5,7 +5,6 @@ from kravtrans0.spherical_statistics import empirical_F, empirical_K
 
 
 def the_test_statistic(S, S0, the_norm=2, r2=int(1e4)):
-
     """
     test statistics with possible choice of the norm
     """
@@ -20,7 +19,6 @@ def the_test_statistic(S, S0, the_norm=2, r2=int(1e4)):
 
 
 def the_test(signal, alpha, m, folder="samples", functional="F"):
-
     """
     summary statistics used to perform the test
     """

@@ -5,7 +5,6 @@ import scipy.signal as signal
 
 
 def the_stft_transform(x, time_t=[]):
-
     """
     standard Short-Time Fourier Transform with a circular Gaussian window
     """
@@ -61,7 +60,6 @@ def stft_display(Vx, time_t, fx, zt, zf):
 
 
 def extr2min(M):
-
     """
     find spectrogram zeros by the Minimal Grid Neighbors method
     """

@@ -7,7 +7,6 @@ sapin = (0.0353, 0.3216, 0.1569)
 
 
 def the_distance(theta1, phi1, theta2, phi2):
-
     """
     distance between the points of spherical coordinates (theta1,phi1) and (theta2,phi2)
     """
@@ -20,7 +19,6 @@ def the_distance(theta1, phi1, theta2, phi2):
 
 
 def the_F_statistics(zt, zp, rs):
-
     """
     unbiased estimator of the empty space function for a point process on the sphere
     """
@@ -77,7 +75,6 @@ def empirical_F(signal, disp=False):
 
 
 def the_K_statistics(zt, zp, rs=np.linspace(0, np.pi, 10 ** 4)):
-
     """
     unbiased estimator of Ripley's K function of a point process on the sphere
     """

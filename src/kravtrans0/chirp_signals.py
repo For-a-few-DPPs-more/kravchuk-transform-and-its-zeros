@@ -5,7 +5,6 @@ sapin = (0.0353, 0.3216, 0.1569)
 
 
 def the_chirp(N, observe=20, duration=15):
-
     """
     chirp of unit energy for the 2-norm
     """
@@ -28,7 +27,6 @@ def the_chirp(N, observe=20, duration=15):
 
 
 def the_white_noise(N):
-
     """
     complex white Gaussian noise of length N+1 normalized for the 2-norm
     """
@@ -42,7 +40,6 @@ def the_white_noise(N):
 
 
 def the_noisy_chirp(N, snr=1, observe=20, duration=15, disp=False):
-
     """
     noisy chirp
     """
@@ -68,7 +65,6 @@ def the_noisy_chirp(N, snr=1, observe=20, duration=15, disp=False):
 
 
 def display_signal(nsignal, time_t=np.array([])):
-
     """
     display the real part of a signal along time
     """

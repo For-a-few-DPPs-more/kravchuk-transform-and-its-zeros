@@ -11,7 +11,6 @@ from kravtrans0.stft_transform import the_stft_transform, the_stft_zeros
 
 
 def noise_samples(N, alpha=0.05, m=199, time_t=[], folder="samples"):
-
     """
     generate m samples of complex white Gaussian noise and perform all required analysis for zero-based detection
     """
