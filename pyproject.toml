@@ -1,0 +1,86 @@
+[tool.poetry] # https://python-poetry.org/docs/pyproject/
+name = "kravtrans0"
+version = "0.1.0"
+description = "Python project boilerplate"
+license = "MIT"
+authors = ["Barbara Pascal <my-email@email.com>"]
+maintainers = ["Barbara Pascal <my-email@email.com>"]
+readme = "README.md" # path to README file (.md or .rst)
+homepage = "https://github.com/bpascal-fr/kravchuk-transform-and-its-zeros" # url
+repository = "https://github.com/bpascal-fr/kravchuk-transform-and-its-zeros" # url
+documentation = "https://github.com/bpascal-fr/kravchuk-transform-and-its-zeros" # url
+keywords = [
+    "python",
+] # ["optimization", "gradrient descent"] at most 5 keywords
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Mathematics",
+] # https://pypi.org/classifiers/
+
+# https://python-poetry.org/docs/pyproject/#packages
+packages = []
+
+# https://python-poetry.org/docs/pyproject/#include-and-exclude
+include = []
+exclude = [] # ["src/data/**/*"]
+
+[tool.poetry.dependencies] # https://python-poetry.org/docs/cli/#add
+# These packages are mandatory and form the core of this package’s distribution.
+python = ">=3.8,<3.10" # >=3.7.1 required by pandas, <3.10 required by scipy
+
+# Install latest version of dependency package-name using
+# poetry add package-name
+# specific the version
+numpy = "^1.22.3"
+scipy = "^1.8.0"
+matplotlib = "^3.5.1"
+statsmodels = "^0.13.2"
+spatstat-interface = "^0.1.2"
+rpy2 = "^3.4.5"
+
+# A list of all of the optional dependencies, some of which are included in the
+# below `extras`. They can be opted into by apps.
+# poetry add package-name --optional
+
+# Jupyter notebooks within VSCode
+jupyter = { version = "^1.0.0", optional = true }
+
+[tool.poetry.extras]
+# poetry install -E notebook -E docs
+
+# Jupyter notebooks to be edited in VSCode
+notebook = ["jupyter"]
+
+# Development dependencies
+# poetry install installs project in editable mode + dev-dependencies
+# poetry install --no-dev
+[tool.poetry.dev-dependencies]
+# poetry add package-name --dev
+# see [tool.pytest.ini_options]
+pytest = "^6.2.3" # run the test suite
+
+# Python "uncompromising" code formatter https://github.com/psf/black
+black = { extras = ["jupyter"], version = "^21.9b0" }
+isort = "^5.9.3"
+pydocstyle = "^6.1.1"
+pylint = "^2.11.1"
+
+[build-system]
+# poetry build
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# For other tools to be black compliant
+# https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html
+[tool.isort]
+profile = "black"
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = "88"
