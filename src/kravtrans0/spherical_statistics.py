@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from kravchuk_transform import the_transform, the_zeros
+
+from kravtrans0.kravchuk_transform import the_transform, the_zeros
 
 sapin = (0.0353, 0.3216, 0.1569)
 

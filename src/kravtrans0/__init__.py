@@ -2,21 +2,31 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy.random as npr
 import statsmodels.stats.proportion as stms
-from chirp_signals import display_signal, the_chirp, the_noisy_chirp, the_white_noise
 from detection_test import the_test, the_test_statistic
-from kravchuk_display import planar_display, signal_display, spherical_display
-from kravchuk_transform import the_transform, the_zeros
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 from scipy.io import loadmat, savemat
-from spherical_statistics import (
+from white_noises import noise_samples
+
+from kravtrans0.chirp_signals import (
+    display_signal,
+    the_chirp,
+    the_noisy_chirp,
+    the_white_noise,
+)
+from kravtrans0.kravchuk_display import (
+    planar_display,
+    signal_display,
+    spherical_display,
+)
+from kravtrans0.kravchuk_transform import the_transform, the_zeros
+from kravtrans0.spherical_statistics import (
     empirical_F,
     empirical_K,
     the_distance,
     the_F_statistics,
     the_K_statistics,
 )
-from stft_transform import stft_display, the_stft_transform, the_stft_zeros
-from white_noises import noise_samples
+from kravtrans0.stft_transform import stft_display, the_stft_transform, the_stft_zeros
 
 mpl.rcParams["xtick.labelsize"] = 30
 mpl.rcParams["ytick.labelsize"] = 30

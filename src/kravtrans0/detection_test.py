@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.io import loadmat, savemat
-from spherical_statistics import empirical_F, empirical_K
+
+from kravtrans0.spherical_statistics import empirical_F, empirical_K
 
 
 def the_test_statistic(S, S0, the_norm=2, r2=int(1e4)):
